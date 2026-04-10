@@ -1,0 +1,168 @@
+.services-partial-017e78 {
+    padding-top: scaleVW(58.9303, $desktop);
+    padding-bottom: scaleVW(109.1577, $desktop);
+    @media(max-width:768px){
+        padding-bottom: scaleVW(49.5895, $movil);
+    }
+    .slide-images{
+        display: block;
+        background-repeat: repeat-x;
+        background-size: contain;
+        background-position: center;
+        height: scaleVW(143.96, $desktop);
+        width: 100%;
+        animation: deslizar 22s linear infinite;
+        margin-bottom: scaleVW(70.6293, $desktop);
+    }
+    .content{
+        @include widthContent;
+        .top-content{
+            .title{
+                @include titleStyle;
+                margin-bottom: scaleVW(64.9031, $desktop);
+                text-align: center;
+            }
+            .two-column-row{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                @media(max-width:768px){
+                    flex-direction: column-reverse;
+                    gap: scaleVW(25.5076, $movil);
+                }
+                .left{
+                    width: scaleVW(922.4098, $desktop);
+                    display: flex;
+                    flex-direction: column;
+                    gap: scaleVW(2.1928, $desktop);
+                    @media(max-width:768px){
+                        width: scaleVW(378.0562, $movil);
+                        gap: scaleVW(.5, $movil);
+                    }
+                    .event-item{
+                        width: 100%;
+                        min-height: scaleVW(81.6428, $desktop);
+                        display: flex;
+                        align-items: center;
+                        padding: 0 scaleVW(28.5398, $desktop) 0 scaleVW(48.9339, $desktop);
+                        background: $secondary;
+                        @media(max-width:768px){
+                            min-height: scaleVW(33.4619, $movil);
+                            padding: 0 scaleVW(11.7854, $movil) 0 scaleVW(19.7811, $movil);
+                        }
+                        .name-and-date{
+                            flex: 1;
+                            display: flex;
+                            align-items: center;
+                            gap: scaleVW(37.5173, $desktop);
+                            .name{
+                                margin: 0;
+                                font-family: $bodoni;
+                                font-size: scaleVW(61, $desktop);
+                                line-height: LH(73.2, 61);
+                                color: $white;
+                            }
+                            .date{
+                                margin: 0;
+                                @include pSsize;
+                            }
+                            @media(max-width:768px){
+                                gap: scaleVW(15, $movil);
+                                .name{
+                                    font-size: scaleVW(25, $movil);
+                                    line-height: LH(30, 25);
+                                }
+                            }
+                        }
+                        .rsvp-call-to-action{
+                            @include goldBorder;
+                            border-radius: scaleVW(35, $desktop);
+                            height: scaleVW(49.2527, $desktop);
+                            span{
+                               border-radius: scaleVW(35, $desktop); 
+                               padding: 0 scaleVW(43.5239, $desktop);
+                               font-size: scaleVW(24.62, $desktop) !important;
+                               line-height: LH(29.54, 24.62) !important;
+                            }
+                            @media(max-width:768px){
+                                border-radius: scaleVW(45, $movil);
+                                height: scaleVW(20.1866, $movil);
+                                span{
+                                    border-radius: scaleVW(45, $movil);
+                                    padding: 0 scaleVW(17.1737, $movil);
+                                    font-size: scaleVW(10.09, $movil) !important;
+                                    line-height: LH(12.11, 10.09) !important;
+                                }
+                            }
+                        }
+                    }
+                }
+                .image-contain{
+                    width: scaleVW(626.8441, $desktop);
+                    height: scaleVW(420.6216, $desktop);
+                    @media(max-width:768px){
+                        width: scaleVW(250.5762, $movil);
+                        height: scaleVW(168.1403, $movil);
+                    }
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                }
+            }
+        }
+        .events-post-grid{
+            margin-top: scaleVW(105.5853, $desktop);
+            display: flex;
+            flex-wrap: wrap;
+            gap: scaleVW(27.6378, $desktop) scaleVW(11.0618, $desktop);
+            @media(max-width:768px){
+                margin-top: scaleVW(18.1133, $movil);
+                gap: scaleVW(6.5971,$movil) scaleVW(10.1616,$movil);
+                justify-content: center;
+            }
+            .event-card{
+                width: scaleVW(391.4532, $desktop);
+                box-sizing: border-box;
+                border: scaleVW(1, $desktop) solid $third;
+                overflow: hidden;
+                background: $third;
+                @media(max-width:768px){
+                    width: scaleVW(181.543, $movil);
+                    border-width: scaleVW(1, $movil);
+                }
+                .thumbnail-contain{
+                    width: 100%;
+                    height: scaleVW(284.6549, $desktop);
+                    img{
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                    }
+                    @media(max-width: 768px){
+                        height: scaleVW(130.1089, $movil);
+                    }
+                }
+                .name{
+                    min-height: scaleVW(135.2809, $desktop);
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    @media(max-width: 768px){
+                        min-height: scaleVW(62.7388, $movil);
+                    }
+                    h4{
+                        @include cardName;
+                    }
+                }
+            }
+        }
+    }
+}
+@keyframes deslizar {
+    from { background-position: 0 0; }
+    to { background-position: -100% 0; }
+}

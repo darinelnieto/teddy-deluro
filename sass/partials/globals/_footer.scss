@@ -1,0 +1,78 @@
+#footer-wrapper{
+    padding: scaleVW(6, $desktop);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 4;
+    @media(max-width:768px){
+        padding: scaleVW(2, $movil);
+    }
+    .footer-partial-d4c647 {
+        background: $secondary;
+        padding: scaleVW(116.8042, $desktop) 0;
+        @media(max-width:768px){
+            padding: scaleVW(27.0109, $movil) 0;
+        }
+        .content{
+            width: scaleVW(1590.9293, $desktop);
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            @media(max-width:768px){
+                width: scaleVW(400.6065, $movil);
+            }
+            .footer-menu{
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li{
+                    margin-bottom: scaleVW(5, $desktop);
+                    a{
+                        font-family: $sf_pro_display;
+                        color: $white;
+                        font-size: scaleVW(28.01, $desktop);
+                        line-height: LH(33.61, 28.01);
+                        margin: 0;
+                        text-decoration: none;
+                    }
+                    @media(max-width:768px){
+                        margin-bottom: 0;
+                        a{
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(20, 16);
+                        }
+                    }
+                }
+            }
+            .social-networks{
+                display: flex;
+                padding: 0;
+                margin: 0;
+                list-style: none;
+                gap: scaleVW(51.5557, $desktop);
+                @media(max-width:768px){
+                    gap: scaleVW(15.9395, $movil);
+                }
+                li{
+                    a{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-sizing: border-box;
+                        width: max-content;
+                        outline: none;
+                        img{
+                            width: max-content;
+                            height: scaleVW(43.852, $desktop);
+                            object-fit: contain;
+                            @media(max-width:768px){
+                                height: scaleVW(19.0487, $movil);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,1 @@
+// JS for partial: talent-available\n

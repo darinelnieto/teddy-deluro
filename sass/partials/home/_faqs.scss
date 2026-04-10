@@ -1,0 +1,66 @@
+.faqs-partial-825057 {
+    padding-bottom: scaleVW(75.923, $desktop);
+    @media(max-width:768px){
+        padding-bottom: scaleVW(60, $movil);
+    }
+    .content{
+        width: scaleVW(1618.2406, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(407.7231, $movil);
+        }
+        .title{
+            @include titleStyle;
+            text-align: center;
+            margin: 0;
+            margin-bottom: scaleVW(103.9354, $desktop);
+            @media(max-width:768px){
+                margin-bottom: scaleVW(40, $movil);
+            }
+        }
+        .faqs-list{
+            display: flex;
+            flex-direction: column;
+            gap: scaleVW(2, $desktop);
+            @media(max-width:768px){
+                gap: scaleVW(1, $movil);
+            }
+            .faqs-item{
+                button{
+                    border: none;
+                    background: $secondary;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    cursor: pointer;
+                    @include cardName;
+                    width: 100%;
+                    height: scaleVW(81.6428, $desktop);
+                    padding: 0 scaleVW(61.0338, $desktop);
+                    outline: none;
+                    @media(max-width:768px){
+                        height: scaleVW(40.5703, $movil);
+                        padding: 0 scaleVW(10, $movil);
+                    }
+                }
+                .answer{
+                    height: 0;
+                    overflow: hidden;
+                    transition: .2s;
+                    width: 100%;
+                    padding: 0 scaleVW(61.0338, $desktop);
+                    & > *{
+                        @include pSsize;
+                        height: auto;
+                    }
+                }
+                &.active{
+                   .answer{
+                        height:auto;
+                        padding: scaleVW(15, $desktop) scaleVW(61.0338, $desktop);
+                   }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,182 @@
+.reviews-partial-f75e1b {
+    padding-top: scaleVW(89.7866, $desktop);
+    padding-bottom: scaleVW(107.924, $desktop);
+    @media(max-width:768px){
+        padding-top: scaleVW(36.9947, $movil);
+        padding-bottom: scaleVW(10, $movil);
+    }
+    .reviews{
+        width: scaleVW(1652.2421, $desktop);
+        margin: 0 auto;
+        margin-bottom: scaleVW(127.9317, $desktop);
+        text-align: center;
+        @media(max-width:768px){
+            width: scaleVW(396.2899, $movil);
+            margin-bottom: scaleVW(33.5634, $movil);
+        }
+        .title{
+            @include titleStyle;
+            margin-bottom: scaleVW(69.7866, $desktop);
+        }
+        .reviews-slide{
+            opacity: 0;
+            transition: .2s;
+            margin-bottom: scaleVW(87.9317, $desktop);
+            .owl-stage{
+                display: flex;
+                align-items: center;
+            }
+            .item{
+                width: scaleVW(865.1406, $desktop);
+                margin: 0 auto;
+                .review-text{
+                    text-align: center;
+                    & > *{
+                        font-family: $sf_pro_display;
+                        font-size: scaleVW(41, $desktop);
+                        line-height: LH(49.2, 41);
+                        color: $white;
+
+                    }
+                }
+                @media(max-width:768px){
+                    width: scaleVW(340.9761, $movil);
+                    .review-text{
+                        & > *{
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(20, 16);
+                        }
+                    }
+                }
+            }
+            .owl-nav{
+                .owl-prev{
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    transform: translate(0%, -50%);
+                    outline: none;
+                    img{
+                        width: scaleVW(54.8662, $desktop);
+                        height: scaleVW(44.2804, $desktop);
+                        object-fit: contain;
+                    }
+                    @media(max-width:768px){
+                        top: 35%;
+                        transform: translate(0, -35%);
+                    }
+                }
+                .owl-next{
+                    position: absolute;
+                    top: 50%;
+                    right: 0;
+                    transform: translate(0%, -50%);
+                    outline: none;
+                    img{
+                        width: scaleVW(54.8662, $desktop);
+                        height: scaleVW(44.2804, $desktop);
+                        object-fit: contain;
+                    }
+                    @media(max-width:768px){
+                        top: 35%;
+                        transform: translate(0, -35%);
+                    }
+                }
+            }
+        }
+        a{
+            @include goldBorder;
+            width: max-content;
+            height: scaleVW(98.3668, $desktop);
+            border-radius: scaleVW(55, $desktop);
+            margin: 0 auto;
+            span{
+                padding: 0 scaleVW(32.5906, $desktop);
+                border-radius: scaleVW(55, $desktop);
+                font-size: scaleVW(49.17, $desktop) !important;
+                line-height: LH(59, 49.17) !important;
+            }
+            @media(max-width:768px){
+                height: scaleVW(35, $movil);
+                border-radius: scaleVW(55, $movil);
+                span{
+                    padding: 0 scaleVW(20.5906, $movil);
+                    border-radius: scaleVW(55, $movil);
+                    font-size: scaleVW(18, $movil) !important;
+                    line-height: LH(20, 18) !important;
+                }
+            }
+        }
+    }
+    /*========== Isntagram ==========*/ 
+    .instagram{
+        width: scaleVW(1468.8522, $desktop);
+        margin: 0 auto;
+        .owl-carousel{
+            .sbi_item{
+                width: 100% !important;
+                .sbi_photo{
+                    height: auto !important;
+                }
+            }
+            .owl-nav{
+                .owl-prev{
+                    position: absolute;
+                    top: 50%;
+                    left: scaleVW(-87.8071, $desktop);
+                    transform: translate(0%, -50%);
+                    outline: none;
+                    img{
+                        width: scaleVW(54.8662, $desktop);
+                        height: scaleVW(91.8423, $desktop);
+                        object-fit: contain;
+                    }
+                    @media(max-width:768px){
+                        top: 40%;
+                        transform: translate(0%, -40%);
+                        img{
+                            height: auto;
+                        }
+                    }
+                }
+                .owl-next{
+                    position: absolute;
+                    top: 50%;
+                    right: scaleVW(-87.8071, $desktop);
+                    transform: translate(0%, -50%);
+                    outline: none;
+                    img{
+                        width: scaleVW(54.8662, $desktop);
+                        height: scaleVW(91.8423, $desktop);
+                        object-fit: contain;
+                    }
+                    @media(max-width:768px){
+                        top: 40%;
+                        transform: translate(0%, -40%);
+                        img{
+                            height: auto;
+                        }
+                    }
+                }
+            }
+            .owl-dots{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: scaleVW(46.6751, $desktop);
+                gap: scaleVW(8.5869, $desktop);
+                .owl-dot{
+                    display: block;
+                    width: scaleVW(19.7072, $desktop);
+                    height: scaleVW(19.7072, $desktop);
+                    border-radius: 50%;
+                    border: scaleVW(1, $desktop) solid $secondary;
+                    outline: none;
+                }
+                .active{
+                    background: $secondary;
+                }
+            }
+        }
+    }
+}

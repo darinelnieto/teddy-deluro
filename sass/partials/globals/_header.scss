@@ -1,0 +1,212 @@
+.header-partial-b3c1ef {
+    position: absolute;
+    z-index: 10;
+    width: 100%;
+    left: 0;
+    top: 0;
+    padding: scaleVW(49.1264, $desktop) 0;
+    .content{
+        width: scaleVW(1805.3485, $desktop);
+        margin: 0 auto;
+        @media(max-width: 768px){
+            width: scaleVW(454.8657, $movil);
+        }
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .logo-contain{
+            width: scaleVW(308.6395, $desktop);
+            height: auto;
+            a{
+                box-sizing: border-box;
+                outline: none;
+                img{
+                    width: 100%;
+                    height: auto;
+                    object-fit: contain;
+                }
+            }
+            @media(max-width: 768px){
+                width: scaleVW(77.7631, $movil);
+            }
+        }
+        .menu-content{
+            flex: 1;
+            display: flex;
+            align-items: center;
+            gap: scaleVW(37.8894, $desktop);
+            justify-content: right;
+            /*======== Book us cta =======*/
+            .book-us-cta{
+                @include goldBorder;
+                width: scaleVW(216.8691, $desktop);
+                height: scaleVW(74.1955, $desktop);
+                border-radius: scaleVW(45, $desktop);
+                outline: none;
+                .content-cta{
+                    border-radius: scaleVW(45, $desktop);
+                }
+                @media(max-width:768px){
+                    width: scaleVW(72.6455, $movil);
+                    height: scaleVW(24.8535, $movil);
+                    border-radius: scaleVW(45, $movil);
+                    .content-cta{
+                        border-radius: scaleVW(45, $movil);
+                    }
+                }
+            }
+            /*======= Bar menu button =======*/
+            .bar-menu{
+                background: none;
+                outline: none;
+                border: none;
+                padding: 0;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                position: relative;
+                width: scaleVW(101.7327, $desktop);
+                height: scaleVW(71.9522, $desktop);
+                gap: scaleVW(10.9125, $desktop);
+                span{
+                    display: block;
+                    width: 100%;
+                    height: scaleVW(16.9554, $desktop);
+                    background-size: 100%;
+                    @media(max-width: 768px){
+                        background: $white !important;
+                    }
+                }
+            }
+        }
+    }
+    /*====== Social networks ======*/
+    .social-networks{
+        display: flex;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        gap: scaleVW(51.5557, $desktop);
+        li{
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                box-sizing: border-box;
+                width: max-content;
+                outline: none;
+                img{
+                    width: max-content;
+                    height: scaleVW(43.852, $desktop);
+                    object-fit: contain;
+                }
+            }
+        }
+        @media(max-width:768px){
+            gap: scaleVW(32.0324, $movil);
+            li{
+                a{
+                    img{
+                        height: scaleVW(30.1402, $movil);
+                    }
+                }
+            }
+        }
+    }
+    .nav-menu{
+        visibility: hidden;
+        width: scaleVW(496.6728, $desktop);
+        height: 90vh;
+        position: absolute;
+        top: scaleVW(191.0572, $desktop);
+        right: scaleVW(-496.6728, $desktop);
+        padding: scaleVW(39.3748, $desktop) scaleVW(56.0571, $desktop);
+        background: rgba(127, 107, 57, 50%);
+        transition: .2s;
+        @media(max-width:768px){
+            width: scaleVW(341.3708, $movil);
+            padding: scaleVW(36.8474, $movil) scaleVW(27.1063, $movil);
+            right: scaleVW(-341.3708, $movil);
+            background: rgba(127, 107, 57, 80%);
+            height: 100vh;
+        }
+        .header-top-menu{
+            padding: 0;
+            margin: 0;
+            margin-bottom: scaleVW(43.4687, $desktop);
+            list-style: none;
+            li{
+                margin-bottom: scaleVW(39.3748, $desktop);
+                a{
+                    color: $primary;
+                    text-decoration: none;
+                    font-size: scaleVW(35.13, $desktop);
+                    line-height: LH(42.16, 35.13);
+                    font-family: $centaur;
+                }
+            }
+            @media(max-width:768px){
+                margin-bottom: scaleVW(33.3079, $movil);
+                li{
+                    margin-bottom: scaleVW(27.2982, $movil);
+                    a{
+                        font-size: scaleVW(24.15, $movil);
+                        line-height: LH(28.98, 24.15);
+                    }
+                }
+            }
+        }
+    }
+    .nav-menu.active{
+        right: scaleVW(0, $desktop);
+        visibility: visible;
+    }
+}
+.header-partial-b3c1ef.fixed{
+    position: fixed;
+    // background: $four;
+    z-index: 10;
+    padding: scaleVW(8.1264, $desktop) 0;
+}
+/*======= Whatsapp =======*/
+.whatsapp{
+    position: fixed;
+    width: scaleVW(109.6594, $desktop);
+    height: scaleVW(109.6594, $desktop);
+    box-sizing: border-box;
+    padding: scaleVW(6, $desktop);
+    right: scaleVW(54.4068, $desktop);
+    bottom: scaleVW(67.7474, $desktop);
+    border-radius: 50%;
+    z-index: 11;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    span{
+        width: 100%;
+        height: 100%;
+        background: $secondary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        img{
+            width: scaleVW(62.2695, $desktop);
+            height: scaleVW(58.5212, $desktop);
+            object-fit: contain;
+        }
+    }
+    @media(max-width:768px){
+        width: scaleVW(27.6292, $movil);
+        height: scaleVW(27.6292, $movil);
+        border-width: scaleVW(2, $movil);
+        right: scaleVW(13.3923, $movil);
+        bottom: scaleVW(13.3923, $movil);
+        span{
+            img{
+                width: scaleVW(15.689, $movil);
+                height: scaleVW(14.7448, $movil);
+            }
+        }
+    }
+}

@@ -1,0 +1,252 @@
+.form-partial-e54445 {
+    padding-bottom: scaleVW(125.2801, $desktop);
+    padding-bottom: scaleVW(63.4154, $desktop);
+    @media(max-width:768px){
+        padding-bottom: scaleVW(60, $movil);
+    }
+    .content{
+        width: scaleVW(1221.9113, $desktop);
+        margin: 0 auto;
+        @media(max-width:768px){
+            width: scaleVW(407.7231, $movil);
+        }
+        .title{
+            @include titleStyle;
+            text-align: center;
+            margin-bottom: scaleVW(80.8169, $desktop);
+            @media(max-width:768px){
+                margin-bottom: scaleVW(20, $movil);
+            }
+        }
+        .form-content{
+            p{
+                margin: 0;
+                margin-bottom: scaleVW(52.3676, $desktop);
+                box-sizing: border-box;
+                @media(max-width:768px){
+                    margin-bottom: scaleVW(15, $movil);
+                }
+                label{
+                    font-family: $bodoni;
+                    color: $white;
+                    font-size: scaleVW(30.7, $desktop);
+                    line-height: LH(35.44, 30.7);
+                    margin: 0;
+                    margin-bottom: scaleVW(14.9118, $desktop);
+                    @media(max-width:768px){
+                        margin-bottom: scaleVW(5, $movil);
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(20, 16);
+                    }
+                }
+                input[type="text"], input[type="tel"], input[type="email"]{
+                    width: 100%;
+                    padding: 0 scaleVW(15, $desktop);
+                    height: scaleVW(74.7353, $desktop);
+                    font-family: $sf_pro_display;
+                    font-size: scaleVW(27, $desktop);
+                    line-height: LH(32.4, 27);
+                    color: $four;
+                    background: $white;
+                    outline: none;
+                    border: none;
+                    @media(max-width:768px){
+                        padding: 0 scaleVW(15, $movil);
+                        height: scaleVW(40, $movil);
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(20, 16);
+                    }
+                }
+                textarea{
+                    width: 100%;
+                    padding: 0 scaleVW(15, $desktop);
+                    height: scaleVW(150.7353, $desktop);
+                    font-family: $sf_pro_display;
+                    font-size: scaleVW(27, $desktop);
+                    line-height: LH(32.4, 27);
+                    color: $four;
+                    background: $white;
+                    outline: none;
+                    border: none;
+                    @media(max-width:768px){
+                        padding: 0 scaleVW(15, $movil);
+                        padding-top: scaleVW(5, $movil);
+                        height: scaleVW(80, $movil);
+                        font-size: scaleVW(16, $movil);
+                        line-height: LH(20, 16);
+                    }
+                }
+            }
+            .two-column{
+                display: flex;
+                justify-content: space-between;
+                @media(max-width:768px){
+                    flex-direction: column;
+                    margin-bottom: scaleVW(15, $movil);
+                }
+                .date{
+                    width: scaleVW(591.4429, $desktop);
+                    box-sizing: border-box;
+                    @media(max-width:768px){
+                        width: 100%;
+                    }
+                    input{
+                        width: 100%;
+                        padding: 0 scaleVW(15, $desktop);
+                        height: scaleVW(74.7353, $desktop);
+                        font-family: $sf_pro_display;
+                        font-size: scaleVW(27, $desktop);
+                        line-height: LH(32.4, 27);
+                        color: $four;
+                        background-color: $white;
+                        outline: none;
+                        cursor: pointer;
+                        filter: none;
+                        border-radius: 0;
+                        box-shadow: none !important;
+                        border: none;
+                        @media(max-width:768px){
+                            padding: 0 scaleVW(15, $movil);
+                            height: scaleVW(40, $movil);
+                            font-size: scaleVW(16, $movil);
+                            line-height: LH(20, 16);
+                        }
+                    }
+                }
+                .event{
+                    width: scaleVW(591.4429, $desktop);
+                    @media(max-width:768px){
+                        width: 100%;
+                    }
+                    p{
+                        margin: 0;
+                    }
+                    .hidden-select {
+                        display: none !important;
+                    }
+                    #options {
+                        position: relative;
+                        width: 100%;
+                        .select{
+                            display: flex;
+                            align-items: center;
+                            background: $white;
+                            width: 100%;
+                            padding: 0 scaleVW(15, $desktop);
+                            height: scaleVW(74.7353, $desktop);
+                            font-family: $sf_pro_display;
+                            font-size: scaleVW(27, $desktop);
+                            line-height: LH(32.4, 27);
+                            color: $four;
+                            outline: none;
+                            cursor: pointer;
+                            @media(max-width:768px){
+                                padding: 0 scaleVW(15, $movil);
+                                height: scaleVW(40, $movil);
+                                font-size: scaleVW(16, $movil);
+                                line-height: LH(20, 16);
+                            }
+                        }
+                        .option-list{
+                            display: none;
+                            position: absolute;
+                            top: 100%;
+                            width: 100%;
+                            left: 0;
+                            background: $white;
+                            padding: scaleVW(12, $desktop);
+                            list-style: none;
+                            z-index:1;
+                            li{
+                                border-bottom: scaleVW(1, $desktop) solid $four;
+                                .opt-btn{
+                                    width: 100%;
+                                    background: transparent;
+                                    border: none;
+                                    color: $four;
+                                    padding: 10px;
+                                    text-align: left;
+                                    cursor: pointer;
+                                    transition: background 0.3s;
+                                    font-family: $sf_pro_display;
+                                    font-size: scaleVW(27, $desktop);
+                                    line-height: LH(32.4, 27);
+                                    @media(max-width:768px){
+                                        padding: scaleVW(10, $movil);
+                                        font-size: scaleVW(16, $movil);
+                                        line-height: LH(20, 16);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .button-contain{
+                position: relative;
+                p{
+                    margin-bottom: 0;
+                }
+                br{
+                    display: none;
+                }
+                button{
+                    @include goldBorder;
+                    border-radius: scaleVW(50, $desktop);
+                    height: scaleVW(98.3668, $desktop);
+                    border: none;
+                    outline: none;
+                    margin: 0 auto;
+                    span{
+                        border-radius: scaleVW(50, $desktop);
+                        font-size: scaleVW(49.17, $desktop);
+                        line-height: LH(59, 49.17);
+                        padding: 0 scaleVW(100.0025, $desktop);
+                    }
+                    @media(max-width:768px){
+                        height: scaleVW(35, $movil);
+                        border-radius: scaleVW(55, $movil);
+                        span{
+                            padding: 0 scaleVW(20.5906, $movil);
+                            border-radius: scaleVW(55, $movil);
+                            font-size: scaleVW(18, $movil) !important;
+                            line-height: LH(20, 18) !important;
+                        }
+                    }
+                }
+                .wpcf7-spinner{
+                    position: absolute;
+                    top: 100%;
+                    left: 50%;
+                    transform: translateX(-50%);
+                }
+            }
+            .wpcf7-response-output{
+                background: $white;
+                padding: scaleVW(10, $desktop);
+                font-family: $sf_pro_display;
+                font-size: scaleVW(18, $desktop);
+                line-height: LH(22, 18);
+                @media(max-width:768px){
+                    padding: scaleVW(15, $movil);
+                    font-size: scaleVW(13, $movil);
+                    line-height: LH(17, 13);
+                }
+            }
+            .wpcf7-not-valid-tip{
+                background: $white;
+                padding: 0 scaleVW(10, $desktop);
+                font-family: $sf_pro_display;
+                font-size: scaleVW(18, $desktop);
+                line-height: LH(22, 18);
+                margin-top: scaleVW(2, $desktop);
+                @media(max-width:768px){
+                    padding: 0 scaleVW(15, $movil);
+                    font-size: scaleVW(13, $movil);
+                    line-height: LH(17, 13);
+                    margin-top: scaleVW(2, $movil);
+                }
+            }
+        }
+    }
+}

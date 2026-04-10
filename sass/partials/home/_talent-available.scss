@@ -1,0 +1,100 @@
+.talent-available-partial-5ed8da {
+    padding: scaleVW(6, $desktop);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    @media(max-width:768px){
+        padding: scaleVW(2, $movil);
+    }
+    .content{
+        background: $secondary;
+        padding: scaleVW(74.5629, $desktop) 0 scaleVW(42.3366, $desktop);
+        @media(max-width:768px){
+            padding: scaleVW(16.4969, $movil) 0 scaleVW(20.4969, $movil);
+        }
+        .title{
+            @include titleStyle;
+            text-align: center;
+            margin: 0;
+            margin-bottom: scaleVW(82.7081, $desktop);
+            @media(max-width:768px){
+                margin-bottom: scaleVW(19.7223, $movil);
+            }
+        }
+        .talent-grid{
+            width: scaleVW(1649.1329, $desktop);
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            gap: scaleVW(27.6378, $desktop) scaleVW(25.4754, $desktop);
+            @media(max-width:768px){
+                width: scaleVW(394.2515, $movil);
+                gap: scaleVW(11.5642, $movil) scaleVW(10.5642, $movil);
+            }
+            .talent-card{
+                width: scaleVW(391.3306, $desktop);
+                border: scaleVW(1, $desktop) solid $third;
+                @media(max-width:768px){
+                    width: scaleVW(191.2682, $movil);
+                    border-width: scaleVW(1, $movil);
+                }
+                .talent-image{
+                    width: 100%;
+                    height: scaleVW(236.0147, $desktop);
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    img{
+                        max-width: 100%;
+                        max-height: scaleVW(217.6717, $desktop);
+                        object-fit: contain;
+                    }
+                    @media(max-width:768px){
+                        height: scaleVW(82.0643, $movil);
+                        img{
+                            max-height: scaleVW(75.6152, $movil);
+                        }
+                    }
+                }
+                .texts{
+                    border-top: scaleVW(1, $desktop) solid $third;
+                    background: $four;
+                    padding: scaleVW(20.1879, $desktop) scaleVW(25.7656, $desktop);
+                    min-height: scaleVW(223.236, $desktop);
+                    text-align: center;
+                    h3{
+                        @include cardName;
+                        margin-bottom: scaleVW(27.137, $desktop);
+                    }
+                    p{
+                        @include pSsize
+                    }
+                }
+            }
+        }
+        a{
+            @include goldBorder;
+            width: max-content;
+            margin: 0 auto;
+            margin-top: scaleVW(58.2337, $desktop);
+            border-radius: scaleVW(50, $desktop);
+            height: scaleVW(98.3668, $desktop);
+            .content-cta{
+                padding: 0 scaleVW(67.6713, $desktop);
+                font-size: scaleVW(49.17, $desktop) !important;
+                line-height: LH(59, 49.17) !important;
+                border-radius: scaleVW(50, $desktop);
+            }
+            @media(max-width:768px){
+                height: scaleVW(35, $movil);
+                border-radius: scaleVW(55, $movil);
+                .content-cta{
+                    padding: 0 scaleVW(20.5906, $movil);
+                    border-radius: scaleVW(55, $movil);
+                    font-size: scaleVW(18, $movil) !important;
+                    line-height: LH(20, 18) !important;
+                }
+            }
+        }
+    }
+}

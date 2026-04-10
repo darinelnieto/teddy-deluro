@@ -1,0 +1,12 @@
+#home-template-9f0a47 {
+    .home-content{
+        background: $white;
+        position: relative;
+        z-index: 4;
+        .contain{
+            background: linear-gradient(-30.3802deg, #000000 0, rgba(127, 107, 57, 50%) 100%);
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    }
+}

@@ -1,0 +1,137 @@
+/*===== Fonts =====*/ 
+@font-face {
+    font-family: 'Centaur';
+    src: url('../fonts/Centaur.woff2') format('woff2'),
+        url('../fonts/Centaur.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('/wp-content/themes/sajo-theme/fonts/SFProDisplay-Light.woff2') format('woff2'),
+        url('/wp-content/themes/sajo-theme/fonts/SFProDisplay-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Bodoni 72 Smallcaps';
+    src: url('/wp-content/themes/sajo-theme/fonts/BodoniSvtyTwoSCITCTT-Book.woff2') format('woff2'),
+        url('/wp-content/themes/sajo-theme/fonts/BodoniSvtyTwoSCITCTT-Book.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+$bodoni: 'Bodoni 72 Smallcaps';
+$sf_pro_display: 'SF Pro Display';
+$centaur: 'Centaur';
+/*===== Colors =====*/
+$primary: var(--main-color);
+$secondary: var(--secondary-color);
+$third: var(--third-color);
+$four: var(--four-color);
+$bg_img: var(--background-image);
+$white: #ffffff;
+/*======== Function width ========*/
+$movil: 480;
+$desktop: 1909.715;
+@function scaleVW($size, $viewportWidth) {
+    @return calc(($size * 100) / $viewportWidth) * 1vw;
+}
+@function LH($lineheight, $fontSize) {
+    @return calc($lineheight / $fontSize);
+}
+html{
+    body{
+        width: 100%;
+        overflow-x: hidden;
+        position: relative;
+        .background-overly{
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            background-size: scaleVW(103.2207, $desktop) scaleVW(142.8487, $desktop);
+            background-repeat: repeat;
+            opacity: 28%;
+        }
+    }
+    @media(max-width:768px){
+        width: 100%;
+        overflow-x: hidden;
+    }
+}
+@mixin widthContent{
+    width: scaleVW(1599.3537, $desktop);
+    margin: 0 auto;
+}
+@mixin goldBorder{
+    padding: scaleVW(6, $desktop);
+    box-sizing: border-box;
+    background-size: 100%;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: .2s;
+    outline: none;
+    .content-cta{
+        background: $secondary;
+        color: $primary;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        font-family: $centaur;
+        font-size: scaleVW(37.09, $desktop);
+        line-height: LH(44.51, 37.09);
+    }
+    @media(max-width:768px){
+        padding: scaleVW(2, $movil);
+        .content-cta{
+            font-size: scaleVW(12.42, $movil);
+            line-height: LH(14.91, 12.42);
+        }
+    }
+    &:hover{
+        transform: scale(1.02);
+    }
+}
+
+@mixin titleStyle{
+    font-family: $bodoni;
+    color: $primary;
+    font-size: scaleVW(91, $desktop);
+    line-height: LH(109.2, 91);
+    @media(max-width:768px){
+        font-size: scaleVW(22.93, $movil);
+        line-height: LH(27.51, 22.93);
+    }
+}
+@mixin pSsize{
+    font-family: $sf_pro_display;
+    font-size: scaleVW(27, $desktop);
+    line-height: LH(32.4, 27);
+    color: $white;
+    @media(max-width:768px){
+        font-size: scaleVW(14, $movil);
+        line-height: LH(18, 14);
+    }
+}
+@mixin cardName{
+    font-family: $bodoni;
+    color: $white;
+    font-size: scaleVW(48.7, $desktop);
+    line-height: LH(58.44, 48.7);
+    margin: 0;
+    @media(max-width:768px){
+        font-size: scaleVW(18, $movil);
+        line-height: LH(20, 18);
+    }
+}

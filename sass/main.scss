@@ -1,0 +1,15 @@
+@import 'default_theme';
+
+// sajo include zone (don't delete anything below)
+// #SajoPartials
+@import "./partials/globals/footer";
+@import "./partials/home/form";
+@import "./partials/home/faqs";
+@import "./partials/home/reviews";
+@import "./partials/home/talent-available";
+@import "./partials/home/services";
+@import "./partials/home/hero";
+@import "./partials/globals/header";
+
+// #SajoTemplates
+@import "./templates/home-template";
