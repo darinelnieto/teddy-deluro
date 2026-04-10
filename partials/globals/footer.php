@@ -19,7 +19,7 @@ $social_networks = get_field('social_networks', 'option');
 ?>
 <section class="footer-partial-d4c647">
     <div class="content">
-        <div class="footer-menu" data-aos="zoom-in">
+        <div class="footer-menu">
             <?php
                 wp_nav_menu( array(
                     'menu'           => 'Foter menu',
@@ -43,7 +43,6 @@ $social_networks = get_field('social_networks', 'option');
                         rel="noopener noreferrer"
                         area-label="Link to <?= $item['link']['title']; ?>" 
                         title="Link to <?= $item['link']['title']; ?>"
-                        data-aos="zoom-in"
                         ><?= wp_get_attachment_image($item['icon'] ?? '', 'medium', false, array(
                         'class' => 'icon-image',
                         'loading' => 'lazy',
